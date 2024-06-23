@@ -15,7 +15,7 @@ $cmp_user = $_POST['password_confirm'];
 if ($mdp_user == $cmp_user) {
     // Se connecter à la base de données
     $user = 'root';
-    $password = '';
+    $password = 'Root';
     $db = 'mfc';
     $host = 'localhost';
 

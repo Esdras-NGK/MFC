@@ -3,7 +3,7 @@
 
 
 $user = 'root';
-$password = '';
+$password = 'Root';
 $db = 'stagiaires';
 $host = 'localhost';
 // $port = 3307;

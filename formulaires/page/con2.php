@@ -23,7 +23,7 @@ $mdp = $_POST['password'];
 // / require_once 'config.php';
 // Se connecter à la base de données
 $user = 'root';
-$password = '';
+$password = 'Root';
 $db = 'mfc';
 $host = 'localhost';
 // $port = 3307;

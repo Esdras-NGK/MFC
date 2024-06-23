@@ -1,0 +1,719 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Montserrat:wght@300&family=Quattrocento+Sans&family=Roboto:ital,wght@0,100;1,100&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: aliceblue;
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* margin: 0 auto; */
+    /* font-family: 'Comic Neue', cursive; */
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Quattrocento Sans', sans-serif;
+    font-family: 'Roboto', sans-serif; */
+}
+
+
+
+.block{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    margin: 0;
+    background-size: cover;
+}
+
+.block video{
+    
+
+
+    position: absolute;
+    /* object-fit: cover; */
+
+    height: 120%;
+    width: 120%;
+    top: 50%;
+    left: 50%;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+    position: fixed;
+}
+
+.block::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: -99;
+    background-color: #03030366;
+    
+}
+nav {
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    /* margin: 0; */
+    left: 0;
+    top: 0;
+    padding: 10px 90px;
+    width: 100%;
+    height: 100px;
+    /* text-align: center; */
+    border-bottom: 1px solid black;
+    
+        /* position: fixed; */
+
+    position: fixed;
+    z-index: 100;
+    
+}
+
+
+nav .onglet{
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+nav .onglet a, button #cat{
+    /* padding: 1% 1%; */
+    /* line-height: 80px; */
+
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 12px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+nav .onglet a:hover{
+    color: rgb(255, 196, 85);
+	font-weight:none;
+	transition:1s;
+}
+nav .logo {
+    
+    float: left;
+
+    
+}
+nav .logo img{
+    width: 100px;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+
+
+
+.block h1{
+    
+    margin-top: 8.5em;
+
+    color: aliceblue;
+    font-size: 2.5em;
+
+}
+
+
+.block h2{
+    margin-top: 0em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section {
+    color: aliceblue;
+    /* background-color: rgba(35, 33, 32, 0.23); */
+    background-color: #03030366;
+    padding: 4px 12px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 110%);
+
+}
+section h1, p, h3, h6 {
+    text-align: center;
+    /* padding: 4px 12px; */
+    /* max-width: 769px;
+    margin-top: 30px;
+    margin-bottom: 30px; */
+}
+
+
+
+
+
+
+section h1 {
+    color: rgb(255, 255, 255);
+    display: block;
+    margin: 0% auto;
+    text-align: center;
+    font-size: 48px;
+
+    max-width: 769px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+
+.valeur {
+    background-color: rgba(0, 0, 0, 0.784);
+    margin: 4em;
+    padding: 4em;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+    gap: 20px;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+/* ///////////////////////////////////////////////// */
+.cursus_contenant {
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #444;
+}
+
+.cursus_contenant:last-of-type, .cursuss:last-of-type {
+    border-bottom: none;
+}
+
+.cursus_contenant h1, .cursuss h1 {
+    font-size: 2em;
+    margin-bottom: 0.2em;
+}
+
+.cursus_contenant p, .cursuss p {
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.courses {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.course {
+    background-color: #00000000;
+    border: 1px solid #444;
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.course-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.course h2 {
+    color: #f90;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.course p {
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.Tarif {
+    background-color: #f90;
+    padding: 10px;
+    text-align: center;
+}
+
+/* /////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+.cursus{
+    background-color: rgba(0, 0, 0, 0.784);
+    margin: 4em;
+    padding: 4em;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+    gap: 20px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.valeur .valeurs{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 2px auto;
+    padding: 2em 2em;
+    align-content :space-around;
+    align-items: center;
+}
+
+
+.cursus .cursus_contenue{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 2px auto;
+    padding: 2em 2em;
+    align-content :space-around;
+    align-items: center;
+}
+
+
+
+
+
+.Valeur1{
+
+    width: 400px;
+}
+
+.Valeur2{
+    text-align: left;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Valeur2 img{
+    padding: 10% 10%;
+}
+
+
+.boites{
+    margin: 2% auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-around;
+    background-color: rgba(255, 103, 2, 0);
+
+    padding: 10em;
+}
+
+.boite1, .boite2, .boite3{
+    display: inline-block;
+    flex-direction: row;
+    height: 600px;
+    width: 420px;
+    background-color: #000000;
+    margin: 20px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.boite1 img, .boite2 img, .boite3 img{
+    height: 300px;
+    width: 420px;
+    border-radius: 25px 25px 0px 0px;
+}
+
+
+
+.boite .texteb h6 {
+    /* text-align: left; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Les chiffres representant la mfc*/
+.Chiffres {
+    border: 4px solid white;
+    
+}
+
+.nombres {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nombres p{
+    color: aliceblue;
+}
+
+.nombres p b{
+    display: block;
+    background-color: rgb(255, 103, 2);
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50% ;
+    Width: 70px;
+    height: 70px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+section .formation{
+    background-color: rgb(255, 103, 2);
+    margin: 10% auto;
+    padding: 10em;
+}
+
+section .formation .formations{
+    margin: 2% auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+/*FORMATION BOUTON*/
+
+.formations .bouton{
+    display: block;
+    background-image: url(../image/entreprise_buton.png);
+    border-radius: 10px;
+    border: 4px double rgb(255, 103, 2);
+    border-radius: 25px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+    
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.formations .bouton2 {
+    display: block;
+    background-image: url(../image/enligne_bouton.png);
+    border-radius: 10px;
+    border: 4px double rgb(255, 103, 2);
+    border-radius: 25px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.formations .bouton:hover{
+    background-image: url(../image/ENtreprise_flou.png);
+    border: 2px solid rgb(255, 103, 2);
+    border-radius: 60px;
+    /* box-shadow: 10px 5px 5px #719fee; */
+    color: rgb(255, 103, 2);
+    text-align: center;
+    font-size: 22px;
+}
+
+.formations .bouton2:hover{
+    background-image: url(../image/En_ligneflou.png);
+    border: 2px solid rgb(255, 103, 2);
+    border-radius: 60px;
+    /* box-shadow: 10px 5px 5px #719fee; */
+    color: rgb(255, 103, 2);
+    text-align: center;
+    font-size: 22px;
+}
+.formations .bouton a, .bouton2 a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    
+
+}
+
+.formations .bouton a:hover, .bouton2 a:hover{
+    text-decoration: none;
+    color: rgb(255, 103, 2);
+    transition: 0.8s;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ */
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #000000;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:900px) {
+   
+
+}
+

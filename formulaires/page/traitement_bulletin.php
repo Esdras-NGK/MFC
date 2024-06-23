@@ -26,7 +26,7 @@ $DateInscr = $_POST['DateInscr'];
 // if ($mdp_user == $cmp_user) {
     // Se connecter à la base de données
     $user = 'root';
-    $password = '';
+    $password = 'Root';
     $db = 'mfc';
     $host = 'localhost';
     // $port = 3307;

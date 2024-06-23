@@ -12,6 +12,7 @@ body {
 }
 body{
     background-color: aliceblue;
+    
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* margin: 0 auto; */
     /* font-family: 'Comic Neue', cursive; */
@@ -200,7 +201,6 @@ section h1 {
     color: rgb(255, 255, 255);
     display: block;
     margin: 0% auto;
-    text-align: center;
     font-size: 30px;
 
     max-width: 769px;
@@ -211,127 +211,94 @@ section h1 {
 
 
 
-.valeur{
+.valeurs {
+    background-color: #ff6600;
+    color: white;
+}
+
+.Valeurs_contenue {
     clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 96%);
-
-    background-color: rgb(255, 103, 2);
-    /* margin: 10px 0px; */
-    padding: 5em;
-    color: rgb(255, 255, 255);
-    /* display: flex;
-    flex-wrap: wrap; */
-    /* padding: 1em; */
-    /* align-items: center; */
     display: flex;
-    flex-direction: column;
-    margin-bottom: 80px;
-    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    color: white;
+
 
 }
+    
+.Intro {
+        max-width: 50%;
+}
+    
+.Valeurs_contenue h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+    
+.Valeurs_contenue p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+    
+    
+.Valeurs_contenue .Valeur_image {
+    max-width: 40%;
+}
+    
+.Valeurs_contenue .Valeur_image img {
+    width: 100%;
+    border-radius: 10%;
+}
+    
 
-.valeur h1 {
-    color: rgb(255, 255, 255);
-    display: block;
-    margin: 0% auto;
+
+
+/* Nos_valeurs ///////////////////////////////////////////////////////////////////////////////////*/
+
+.valeurs-section {
+    padding: 50px;
+}
+
+.valeurs-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.valeurs-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.valeurs-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.valeur-item {
+    background-color: #ffffff;
+    color: #ff6600;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
     text-align: center;
-    font-size: 30px;
-
-    max-width: 769px;
-    margin-top: 3px;
-    margin-bottom: 2px;
-    
 }
 
-.valeur P {
-    color: rgb(255, 255, 255);
-    display: block;
-    margin: 0% auto;
-    text-align: center;
-
-    max-width: 769px;
-    margin-top: 3px;
-    margin-bottom: 2px;
-    
+.valeur-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
 }
 
-
-.pol{
-    display: flex;
-    text-align: left;
-    padding: 10px;
+.valeur-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
 }
 
-.pol p{
-    text-align: left;
+.valeur-item p {
+    font-size: 1em;
 }
-
-.valeur .valeurs{
-    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
-
-    display: flex;
-    /* flex-wrap: wrap; */
-    background-color: rgb(255, 103, 2);
-    /* margin: 2px auto; */
-    padding: 80px;
-    justify-content :space-around;
-    /* align-items: center; */
-}
-
-.Valeur1{
-    /* padding: 5em; */
-    /* text-align: left; */
-    display: block;
-    /* margin: 100px; */
-    height: 400px;
-    width: 400px;
-    /* flex-direction: column; */
-
-}
-
-.Valeur2{
-    /* padding: 5em; */
-    text-align: left;
-    width: 400px;
-    height: 400px;
-    /* margin: 100px; */
-
-    /* margin-right: auto; */
-    display: flex;
-
-    border: 100px solid rgb(255, 103, 2);
-    border-radius: 200px;
-
-
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-right: 0;
-    display: flex;
-}
-
-.Valeur2 img{
-    padding: 10% 10%;
-    
-    
-   
-}
-
-.motdupresident {
-    /* border: 4px solid white; */
-
-    height: 100vh;
-    padding: 100px;
-    background-color: #000000;
-
-    margin-bottom: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 120px;
-    padding-bottom: 100px;
-
-}
-
-
-
 
 
 
@@ -598,41 +565,6 @@ section .formation .formations{
 
 
 
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-}
-
-label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-}
-
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-}
-
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-
-.container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-}
 
 /*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
  */
@@ -645,78 +577,6 @@ input[type=submit]:hover {
 
 
 
-
-
-/* ----------------------------------------------------------------------------------------------------------------- */
-/* DJD */
-
-
-
-
-
-.section-chiffres--oblique {
-    max-width: 100vw;
-    background-color: rgba(155,214,218,.08);
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: -80px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 120px;
-    padding-bottom: 100px;
-    display: flex;
-}
-* {
-    box-sizing: border-box;
-}
-user agent stylesheet
-div {
-    display: block;
-}
-body {
-    color: #333;
-    font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
-    font-size: 14px;
-    line-height: 20px;
-}
-body {
-    min-height: 100%;
-    background-color: #fff;
-    margin: 0;
-    font-size: 20px;
-    line-height: 20px;
-}
-:root {
-    --white: white;
-    --black: #181f1f;
-    --dark-slate-blue: #004874;
-    --cyan: #00eaff;
-    --orange: #f07d1a;
-    --vert: #83ff00;
-    --jaune: #ffdb2d;
-    --vert-foncé: #3ca55b;
-    --violet: #b12bff;
-    --securité: #5bffb6;
-    --dodger-blue: #258aff;
-    --black-0-8: #181f1f;
-    --light-slate-grey: #8c97ac;
-    --vert-ynov: #42ab9e;
-    --powder-blue-2: rgba(155,214,218,.08);
-    --grey-0-7: #333;
-    --alice-blue: #e8edf4;
-    --ynov: #42ab9e;
-    --rose: magenta;
-    --bleu-tech-bus: #0035f9;
-    --blue-tech-transparent: rgba(0,53,249,.8);
-    --cyan-opacity: rgba(0,234,255,.1);
-    --light-steel-blue: #b4bfce;
-    --powder-blue: #9bd6da;
-}
-html {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    font-family: sans-serif;
-}
 
 
 
@@ -749,7 +609,7 @@ html {
 
 
 
-.container{
+.footer_contenue{
 	max-width: 1170px;
 	margin:auto;
 }
@@ -761,8 +621,6 @@ ul{
 	list-style: none;
 }
 .footer{
-    clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 100%);
-
 	background-color: #000000;
     padding: 70px 0;
 }
@@ -783,7 +641,7 @@ ul{
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #e91e63;
+	background-color: rgb(255, 103, 2);
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;

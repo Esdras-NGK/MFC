@@ -3,11 +3,11 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 /*Classe de traitement des exceptions et des erreurs*/
-require  '../../../../PHPMailer/PHPMailer_master/PHPMailer_master/src/Exception.php';
+require  '../../../../../PHPMailer/PHPMailer_master/PHPMailer_master/src/Exception.php';
 /*Classe-PHPMailer*/
-require '../../../../PHPMailer/PHPMailer_master/PHPMailer_master/src/PHPMailer.php';
+require '../../../../../PHPMailer/PHPMailer_master/PHPMailer_master/src/PHPMailer.php';
 /*Classe SMTP nécessaire pour établir la connexion avec un serveur SMTP*/
-require '../../../../PHPMailer/PHPMailer_master/PHPMailer_master/src/SMTP.php';
+require '../../../../../PHPMailer/PHPMailer_master/PHPMailer_master/src/SMTP.php';
 /*Lors de la création d’un objet PHPMailer, passez le paramètre "true" pour activer les exceptions (messages en cas d’erreur)*/
 $mail = new PHPMailer(true);
 
@@ -30,9 +30,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Host ='smtp.gmail.com'; 
         $mail->Port = 587;             
     
-        $mail->Username = "ngoulhoudk@gmail.com";
-        $mail->Username = "ngoulhoudk@gmail.com";
-        $mail->Password = "mkax zsew schg crxx";
+        $mail->Username = "contact.mfc02@gmail.com";
+        $mail->Username = "contact.mfc02@gmail.com";
+        $mail->Password = "wrwf eaeb yitx uujv";
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;             
     
@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     
         // Remplacer par l’adresse e-mail du destinataire
-        $mail->addAddress("ngoulhoudk@gmail.com"); 
+        $mail->addAddress("contact.mfc02@gmail.com"); 
        
     
         $mail->isHTML(true);                

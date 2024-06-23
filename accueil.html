@@ -39,28 +39,54 @@
     </header>
     <section>
         <!-- Section des valeurs de l'école -->
-        <div class="valeur">
-            <h1>NOS VALEURS</h1> <br>
-            <p>Ces valeurs constituent le "ciment" de la MFC et illustrent la réalité de notre ambition : transformer et enrichir la vie des individus. <br>
-            <div class="valeurs">
-                <!-- Liste des valeurs de l'école -->
-                <div class="Valeur1">
-                    <b>Passion :</b> offrir une même qualité de service sur tous les sites <br>
-                    <b>Innovation :</b> communiquer les découvertes et nouveautés <br>
-                    <b>Orientation client :</b> créer de la valeur pour le client, construire ensemble <br>
-                    <b>Respect :</b> progresser ensemble <br>
+        <div class="valeurs">
+            <div class="Valeurs_contenue">
+                <div class="Intro">
+                    <h1>LE MOT DU PRÉSIDENT</h1>
+                    <p>Dans un espace de formation entièrement réservé aux adultes, la Maison de la Formation Continue s'est dotée d'une organisation qui lui permet d'optimiser les temps de formation. En effet, la culture pédagogique de notre entreprise repose sur la capitalisation des savoirs fondamentaux et des savoir-faire pédagogiques que nous développons en permanence.</p>
+                    
                 </div>
-                <!-- Image illustrant les valeurs -->
-                <div class="valeur2">
-                    <img src="image/valeurs.png" alt="" width="400px;" height="230px;">
-                    <a href="" ></a>
+                <div class="Valeur_image">
+                    <img src="image/Main_dans_la_main.jpg" alt="Handshaking" width="500px;" height="400px;">
+                    
                 </div>
             </div>
-            <!-- Section du mot du président -->
-            <h1>LE MOT DU PRÉSIDENT</h1>
-            <div classe="valeur2">
-                <p>Dans un espace de formation entièrement réservé aux adultes, la Maison de la Formation Continue s'est dotée d'une organisation qui lui permet d'optimiser les temps de formation. En effet, la culture pédagogique de notre entreprise repose sur la capitalisation des savoirs fondamentaux et des savoir-faire pédagogiques que nous développons en permanence.</p>
+
+
+
+
+            <div class="valeurs-section">
+                <h1>Nos Valeurs</h1>
+                <p>Ces valeurs constituent le "ciment" de la MFC et illustrent la réalité de notre ambition : transformer et enrichir la vie des individus.</p>
+                <div class="valeurs-container">
+                    <div class="valeur-item">
+                        <img src="image/Icon/Passion_icon.png" alt="Passion">
+                        <h2>Passion</h2>
+                        <p>même qualité de service sur tous les sites</p>
+                    </div>
+                    <div class="valeur-item">
+                        <img src="image/Icon/Innovation_icon.png" alt="Innovation">
+                        <h2>Innovation</h2>
+                        <p>communiquer les découvertes et nouveautés</p>
+                    </div>
+                    <div class="valeur-item">
+                        <img src="image/Icon/Client_icon.png" alt="Orientation Client">
+                        <h2>Orientation Client</h2>
+                        <p>créer de la valeur pour le client, construire ensemble</p>
+                    </div>
+                    <div class="valeur-item">
+                        <img src="image/Icon/Respect_icon.png" alt="Respect">
+                        <h2>Respect</h2>
+                        <p>progresser ensemble</p>
+                    </div>
+                </div>
             </div>
+
+
+
+
+            
+            
         </div>
         <!-- Section des caractéristiques de l'école représentées par des chiffres -->
         <div class="Chiffres">
@@ -98,57 +124,44 @@
         </div>
 
 
-
-
-        <h2>Formulaire de contact MFC</h2>
-
-<div class="container">
-  <form action="formulaires/send_email.php" method="post">
-    <label for="name">Nom</label>
-    <input type="text" id="name" name="name" placeholder="Votre nom..">
-
-    <label for="email">Email</label>
-    <input type="text" id="email" name="email" placeholder="Votre email..">
-
-    <label for="subject">Type de problème</label>
-    <select id="subject" name="subject">
-      <option value="website">Problème de site web</option>
-      <option value="account">Problème de compte</option>
-      <option value="other">Autre</option>
-    </select>
-
-    <label for="body">Sujet</label>
-    <textarea id="body" name="body" placeholder="Ecrivez quelque chose.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-  </form>
-</div>
     </section>
+
+
+
     <!-- Pied de page -->
     <footer class="footer">
-        <div class="container">
+        <div class="footer_contenue">
             <div class="row">
+                <div class="footer-col">
+                    <h4>Nos offres</h4>
+                    <ul>
+                        <li><a href="html/Formation/en_ligne.html">Formation en ligne</a></li>
+                        <li><a href="html/Formation/entreprise.html">Formation en entreprise</a></li>
+                        <li><a href="html/domaine_formation/domaine_formation.html">Nos domaines de formations</a></li>
+
+
+                    </ul>
+                </div>
+
                 <div class="footer-col">
                     <h4>Compagnie</h4>
                     <ul>
                         <li><a href="html/apropos.html">A propos</a></li>
-                        <li><a href="html/domaine_formation/domaine_formation.html">Nos formations</a></li>
-                        <li><a href="html/domaine_formation/politiqueconfidentialité.html">politique de confidentialité</a></li>
+                        <li><a href="html/politiqueconfidentialité.html">politique de confidentialité</a></li>
+                        <li><a href="doc/Bulletin d'inscription.docx" download="Bulletin d'inscription.docx">Télécharger le bulletin d'inscription</a></li>
                     </ul>
                 </div>
+
                 <div class="footer-col">
                     <h4>Besoin d'aide</h4>
                     <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Formulaire de Contact</a></li>
+                        <li><a href="html/apropos.html">FAQ</a></li>
+                        <li><a href="html/Contact.html">Formulaire de Contact</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- Inclusion du fichier JavaScript -->
-    <script src="script.js"></script>
-    <!-- Inclusion d'un second fichier JavaScript -->
-    <script src="script2.js"></script>
+    
 </body>
 </html>
