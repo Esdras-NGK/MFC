@@ -15,35 +15,26 @@
         <div><?php echo $error; ?></div>
     <?php } 
   ?> 
+
     <header class="block">
+      <nav>
+          <div class="logo"><a href="../accueil.html"><img src="../image/LOGO.png" alt="logo" title="Cliquez pour agrandir" /></a></div>
+          <div class="onglet">
+              <a href="../accueil.html">accueil</a>
+              <a href="../html/Formation/entreprise.html">formation</a>
+              <a href="../html/domaine_formation/domaine_formation.html">domaine formation</a>
+              <a href="page/connexion.php">Espace_personnel</a>
+              <a href="../html/apropos.html">A propos</a>
+              <a href="../html/Contact.html">Contact</a>
+          </div>    
+      </nav>
 
-        <nav>
-            <!-- <a href=""></a><div class="logo" ><a href=""><img src="" alt=""></a></div> -->
-            <div class="logo"><a href="../../accueil.html"><img src="../../image/LOGO.png" alt="logo" title="Cliquez pour agrandir" /></a></div>
-            <div class="onglet">
-                <a href="accueil.html">accueil</a>
-                <!-- <a href="html/Formation/entreprise.html">formation</a> -->
-
-                <a href="../../html/domaine_formation/domaine_formation.html">domaine formation</a>
-                <a href="../../formulaires/page/connexion.php">Espace_personnel</a>
-                <a href="../../html/apropos.html">A propos</a>
-
-            </div>    
-        </nav>
-
-
-        <video autoplay="autoplay" muted="" loop="infinite" src="../video/connexion.mp4"></video>
-                <!-- <h1>MFC</h1> -->
-                <!-- <h2>La voie de la connaissance</h2> -->
-                <!-- <button><a href="#produits">Decouvrir</a></button> -->
-
-
-
-
-
+      <video autoplay="autoplay" muted="" loop="infinite" src="video/connexion.mp4"></video>
         <div class="form-container2">
                 <form action="page/traitement_stagiaire.php" method="POST">
                     <H1>INSCRIPTION STAGIAIRE</H1>
+
+                      <!-- les champs de votre formulaire ici -->
 
                       <div class="nom">
                           <label>Nom</label>
@@ -67,211 +58,62 @@
                       </div>
                       
                       
-                        
-
-
-
 
                       <div class="mdp">
                         <label>Mot de passe</label><input type="password" id="password" name="password" placeholder="Mot de passe" required minlength="8">
 
-
-                            <!-- <button type="button" id="toggle-password" aria-label="Afficher le mot de passe en clair"> -->
-                            <!-- <i class="fa fa-eye"></i>
-                            </button> <br> -->
-
                             <label>Confirmer votre mot de passe</label>
                             <input type="password" id="password_confirm" name="password_confirm" placeholder="Confirmer votre mot de passe" required minlength="8">
-                            <!-- <button type="button" id="toggle-password-confirm" aria-label="Afficher le mot de passe en clair">
-                            <i class="fa fa-eye"></i>
-                            </button>
-
-                            <script>
-                            const togglePasswordBtn = document.querySelector('#toggle-password');
-                            const togglePasswordConfirmBtn = document.querySelector('#toggle-password-confirm');
-                            const passwordField = document.querySelector('#password');
-                            const passwordConfirmField = document.querySelector('#password_confirm');
-
-                            togglePasswordBtn.addEventListener('click', () => {
-                            const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
-                            passwordField.setAttribute('type', type);
-                            togglePasswordBtn.querySelector('i.fa').classList.toggle('fa-eye-slash');
-                            });
-
-                            togglePasswordConfirmBtn.addEventListener('click', () => {
-                            const type = passwordConfirmField.getAttribute('type') === 'password' ? 'text' : 'password';
-                            passwordConfirmField.setAttribute('type', type);
-                            togglePasswordConfirmBtn.querySelector('i.fa').classList.toggle('fa-eye-slash');
-                            });
-                            </script> -->
+                            
 
                         </div>
 
-
-
-
-                        
-
-                        <!-- <label>Mot de passe</label>
-                        <input type="password" id="password" name="password" placeholder="Mot de passe" required minlength="8">
-                        <button type="button" id="toggle-password" aria-label="Afficher le mot de passe en clair">
-                        <i class="fa fa-eye"></i>
-                        </button>
-
-                        <label>Confirmer votre mot de passe</label>
-                        <input type="password" id="password_confirm" name="password_confirm" placeholder="Confirmer votre mot de passe" required minlength="8">
-                        <button type="button" id="toggle-password-confirm" aria-label="Afficher le mot de passe en clair">
-                        <i class="fa fa-eye"></i>
-                        </button>
-
-                        <script>
-                        const togglePasswordBtn = document.querySelector('#toggle-password');
-                        const togglePasswordConfirmBtn = document.querySelector('#toggle-password-confirm');
-                        const passwordField = document.querySelector('#password');
-                        const passwordConfirmField = document.querySelector('#password_confirm');
-
-                        togglePasswordBtn.addEventListener('click', () => {
-                        const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
-                        passwordField.setAttribute('type', type);
-                        togglePasswordBtn.querySelector('i.fa').classList.toggle('fa-eye-slash');
-                        });
-
-                        togglePasswordConfirmBtn.addEventListener('click', () => {
-                        const type = passwordConfirmField.getAttribute('type') === 'password' ? 'text' : 'password';
-                        passwordConfirmField.setAttribute('type', type);
-                        togglePasswordConfirmBtn.querySelector('i.fa').classList.toggle('fa-eye-slash');
-                        });
-                        </script> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        
-                        
-                        
-
-
-
-
-
-
-                        
-
-
-
-                        
+    
                         <input type="submit" value="s'inscrire">
                         
-                        <p>En cliquant sur le buton "S'inscrire" vous acceptez de vous conformer aux consitions suivantes <a href="page/mensionlegal.html">condition générales d'utilisation</a> and <a href="">Politique de confidentialité</a>/ &copy 2022 Net-Akila sarl Tous Droits Réservés <br> 
+                        <p>En cliquant sur le buton "S'inscrire" vous acceptez de vous conformer à la <a href="../html/politiqueconfidentialité.html">politique de confidentialité</a> / &copy 2022 MFC sarl Tous Droits Réservés <br> 
                         </p>
                         
 
-
-
-
-
-
-
-
-
-
-                        
                     <div class="mot">
                         <p>Vous avez déja un compte ? <a href="page/connexion.php">Connectez-vous ici</a></p>       
                     </div>
-                        <!-- les champs de votre formulaire ici -->
                 </form>
       </div>
 
-
-
-                
-
-
-
-
-
-
-
-
-
-
-                          
+     
     </header>
 
+    <footer class="footer">
+        <div class="footer_contenue">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Nos offres</h4>
+                    <ul>
+                        <li><a href="../html/Formation/en_ligne.html">Formation en ligne</a></li>
+                        <li><a href="../html/Formation/entreprise.html">Formation en entreprise</a></li>
+                        <li><a href="../html/domaine_formation/domaine_formation.html">Nos domaines de formations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Compagnie</h4>
+                    <ul>
+                        <li><a href="../html/apropos.html">A propos</a></li>
+                        <li><a href="../html/politiqueconfidentialité.html">politique de confidentialité</a></li>
+                        <li><a href="../doc/Bulletin d'inscription.docx" download="Bulletin d'inscription.docx">Télécharger le bulletin d'inscription</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Besoin d'aide</h4>
+                    <ul>
+                        <li><a href="../html/Contact.html">Formulaire de Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <div class="video-background">
-      <video autoplay loop muted>
-        <source src="video/lac-91562.mp4" type="video/mp4">
-      </video> -->
-      
-    <!-- </div> -->
-
-  
-    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script> -->
-
-
-
+       <h5>/ &copy 2022 MFC sarl Tous Droits Réservés</h5>
+    </footer>
+    
   </body>
 </html>

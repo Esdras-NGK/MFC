@@ -2,12 +2,6 @@
 
 
 
-
-
-
-
-
-
 $NomS = $_POST['nom'];
 $PrenomS = $_POST['prenom'];
 $Tel_S = $_POST['number'];
@@ -17,12 +11,6 @@ $Entreprise = $_POST['entreprise'];
 $mdp = $_POST['password'];
 $cmdp = $_POST['password_confirm'];
 
-
-
-
-
-
-  
 
 // Vérifier la correspondance des mots de passe
 if ($mdp == $cmdp) {
@@ -39,12 +27,6 @@ if ($mdp == $cmdp) {
     if (!$connexion)  {
         die("La connexion a échoué : " . mysqli_connect_error());
     }
-
-    
-
-
-
-
 
           // Traitement du formulaire
       if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -82,13 +64,6 @@ if ($mdp == $cmdp) {
       }
 
 
-
-
-
-
-
-
-
     // Fermer la connexion à la base de données
     mysqli_close($connexion);
 } else {
@@ -97,14 +72,4 @@ if ($mdp == $cmdp) {
 
 
 
-
-
 ?>
-
-
-
-
-
-
-
-

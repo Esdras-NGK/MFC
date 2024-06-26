@@ -1,21 +1,6 @@
 
 <?php
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Récupérer les valeurs saisies dans le formulaire de connexion
 $Mail_S = $_POST['email'];
 $mdp = $_POST['password'];
@@ -28,7 +13,7 @@ $db = 'mfc';
 $host = 'localhost';
 // $port = 3307;
 
-$connexion = mysqli_connect($host, $user, $password, $db, $port);
+$connexion = mysqli_connect($host, $user, $password, $db);
 
 // Vérifier si la connexion a réussi
 if (!$connexion) {
@@ -47,7 +32,7 @@ if (!$resultat) {
 if (mysqli_num_rows($resultat) > 0) {
     // Autoriser l'utilisateur à accéder à votre application
     echo "Connexion réussie. Vous allez être redirigé vers le site de bulletin d'inscription dans 5 secondes...";
-    header("refresh:5;url=../bulletin_inscription.php");
+    header("refresh:5;url=monCompte.php");
     exit();
 } 
 else {
@@ -57,16 +42,5 @@ else {
 
 // Fermer la connexion à la base de données
 mysqli_close($connexion);
-
-
-
-
-
-
-
-
-
-
-
 
 ?>

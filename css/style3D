@@ -383,10 +383,10 @@ section h1 {
 }
 
 
-
+/* 
 .boite .texteb h6 {
-    /* text-align: left; */
-}
+    text-align: left;
+} */
 
 
 

@@ -12,13 +12,8 @@ body {
 }
 body{
     background-color: aliceblue;
-    
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    /* margin: 0 auto; */
-    /* font-family: 'Comic Neue', cursive; */
     font-family: 'Montserrat', sans-serif;
-    /* font-family: 'Quattrocento Sans', sans-serif;
-    font-family: 'Roboto', sans-serif; */
 }
 
 
@@ -38,12 +33,9 @@ body{
 }
 
 .block video{
-    
-
 
     position: absolute;
     /* object-fit: cover; */
-
     height: 120%;
     width: 120%;
     top: 50%;
@@ -60,7 +52,6 @@ body{
     width: 100%;
     z-index: -99;
     background-color: #03030366;
-    
 }
 nav {
     display: flex;
@@ -69,7 +60,6 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
     box-sizing: border-box;
     /* margin: 0; */
     left: 0;
@@ -79,9 +69,6 @@ nav {
     height: 100px;
     /* text-align: center; */
     border-bottom: 1px solid black;
-    
-        /* position: fixed; */
-
     position: fixed;
     z-index: 100;
     
@@ -96,13 +83,9 @@ nav .onglet{
     display: flex;
     text-decoration: none;
     display: inline-block;
-
 }
 
 nav .onglet a, button #cat{
-    /* padding: 1% 1%; */
-    /* line-height: 80px; */
-
     text-decoration: none;
     color: rgb(0, 0, 0);
     padding: 12px 30px;
@@ -118,10 +101,7 @@ nav .onglet a:hover{
 	transition:1s;
 }
 nav .logo {
-    
     float: left;
-
-    
 }
 nav .logo img{
     width: 100px;
@@ -130,8 +110,6 @@ nav .logo img{
     font-weight: bold;
 
 }
-
-
 
 
 .block h1{
@@ -175,25 +153,14 @@ nav .logo img{
 
 
 
-
-
-
-
-
 section {
     color: aliceblue;
-    /* background-color: rgba(35, 33, 32, 0.23); */
     background-color: #03030366;
     padding: 4px 12px;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 110%);
-
 }
 section h1, p, h3, h6 {
     text-align: center;
-    /* padding: 4px 12px; */
-    /* max-width: 769px;
-    margin-top: 30px;
-    margin-bottom: 30px; */
 }
 
 
@@ -592,7 +559,7 @@ section .formation .formations{
 .team {
     text-align: center;
     padding: 50px 20px;
-    background-color: #f9f9f9;
+    background-color: rgb(255, 103, 2);
 }
 
 .team h1 {
@@ -614,7 +581,7 @@ section .formation .formations{
 
 .member img {
     border-radius: 50%;
-    border: 2px solid #ccc;
+    border: 2px solid rgb(130, 52, 0);
     margin-bottom: 10px;
 }
 
@@ -632,7 +599,7 @@ section .formation .formations{
 .testimonials {
     text-align: center;
     padding: 50px 20px;
-    background-color: #fff;
+    background-color: rgb(255, 103, 2);
 }
 
 .testimonials h1 {
@@ -675,6 +642,7 @@ section .formation .formations{
 .partners h1 {
     font-size: 36px;
     margin-bottom: 20px;
+    color: #000000;
 }
 
 .partners-logos {
@@ -708,27 +676,6 @@ section .formation .formations{
     max-width: 800px;
     margin: 0 auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

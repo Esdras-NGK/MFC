@@ -3,11 +3,6 @@
 
 
 
-
-
-
-
-
 $NomS = $_POST['nom'];
 $PrenomS = $_POST['prenom'];
 $Tel_S = $_POST['number'];
@@ -37,9 +32,6 @@ $DateInscr = $_POST['DateInscr'];
     if (!$connexion)  {
         die("La connexion a échoué : " . mysqli_connect_error());
     }
-
-
-
 
 
 
